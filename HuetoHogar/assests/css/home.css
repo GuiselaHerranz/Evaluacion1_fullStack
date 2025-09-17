@@ -1,0 +1,159 @@
+/* CARRUSEL HOME - Estilos específicos para tu estructura */
+#carouselHuertoHogar {
+    margin-top: 80px; /* Compensa el navbar fijo */
+}
+
+#carouselHuertoHogar .carousel-inner {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+#carouselHuertoHogar .carousel-item img {
+    height: 500px; /* Altura fija para todas las imágenes */
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Indicadores personalizados */
+#carouselHuertoHogar .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 8px;
+    background-color: var(--verde-esmeralda);
+    border: 2px solid white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#carouselHuertoHogar .carousel-indicators .active {
+    background-color: var(--amarillo-mostaza);
+    transform: scale(1.2);
+}
+
+/* Flechas de navegación personalizadas */
+#carouselHuertoHogar .carousel-control-prev,
+#carouselHuertoHogar .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(46, 139, 87, 0.8);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+#carouselHuertoHogar .carousel-control-prev {
+    left: 20px;
+}
+
+#carouselHuertoHogar .carousel-control-next {
+    right: 20px;
+}
+
+#carouselHuertoHogar .carousel-control-prev:hover,
+#carouselHuertoHogar .carousel-control-next:hover {
+    background-color: var(--verde-esmeralda);
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* Overlay para mejor contraste de texto (si agregas textos después) */
+#carouselHuertoHogar .carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 600px;
+}
+
+#carouselHuertoHogar .carousel-caption h5 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--amarillo-mostaza);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+#carouselHuertoHogar .carousel-caption p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Responsividad */
+@media (max-width: 992px) {
+    #carouselHuertoHogar .carousel-item img {
+        height: 400px;
+    }
+    
+    #carouselHuertoHogar .carousel-caption h5 {
+        font-size: 2rem;
+    }
+    
+    #carouselHuertoHogar .carousel-caption p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #carouselHuertoHogar {
+        margin-top: 70px;
+    }
+    
+    #carouselHuertoHogar .carousel-item img {
+        height: 300px;
+    }
+    
+    #carouselHuertoHogar .carousel-control-prev,
+    #carouselHuertoHogar .carousel-control-next {
+        width: 40px;
+        height: 40px;
+    }
+    
+    #carouselHuertoHogar .carousel-caption {
+        bottom: 30px;
+        padding: 15px;
+    }
+    
+    #carouselHuertoHogar .carousel-caption h5 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #carouselHuertoHogar .carousel-item img {
+        height: 250px;
+    }
+    
+    #carouselHuertoHogar .carousel-indicators button {
+        width: 10px;
+        height: 10px;
+        margin: 0 5px;
+    }
+    
+    #carouselHuertoHogar .carousel-control-prev {
+        left: 10px;
+    }
+    
+    #carouselHuertoHogar .carousel-control-next {
+        right: 10px;
+    }
+    
+    #carouselHuertoHogar .carousel-caption {
+        bottom: 20px;
+        padding: 10px;
+        width: 90%;
+    }
+    
+    #carouselHuertoHogar .carousel-caption h5 {
+        font-size: 1.2rem;
+    }
+    
+    #carouselHuertoHogar .carousel-caption p {
+        font-size: 0.9rem;
+    }
+}

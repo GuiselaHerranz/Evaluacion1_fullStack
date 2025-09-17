@@ -1,0 +1,14 @@
+/* FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+
+/* VARIABLES DE COLORES */
+:root {
+    --verde-esmeralda: #2E8B57;
+    --amarillo-mostaza: #FFD700;
+    --marron-claro: #8B4513;
+    --gris-oscuro: #333333;
+    --gris-medio: #666666;
+    --blanco-suave: #F7F7F7;
+    --fondo-textura: #f9f9f9;
+    --verde-oscuro: #006400;
+}

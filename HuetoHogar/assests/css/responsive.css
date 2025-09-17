@@ -1,0 +1,89 @@
+/* RESPONSIVIDAD */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    main {
+        padding-top: 70px;
+    }
+
+    .categories-filter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-category {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .products-banner {
+        padding: 2.5rem 0;
+    }
+
+    .products-banner h1 {
+        font-size: 2rem;
+    }
+
+    .products-banner p.lead {
+        font-size: 1.1rem;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .product-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-body {
+        padding: 1.25rem;
+    }
+
+    .product-title {
+        font-size: 1.6rem;
+    }
+    
+    .products-banner h1 {
+        font-size: 1.8rem;
+    }
+    
+    .btn-primary {
+        padding: 8px 16px;
+    }
+}
+
+/* Responsividad para el home banner */
+@media (max-width: 768px) {
+    .home-banner {
+        padding: 5rem 0;
+        min-height: 50vh;
+    }
+    
+    .home-banner h1 {
+        font-size: 2.5rem;
+    }
+    
+    .home-banner p.lead {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .home-banner {
+        padding: 4rem 0;
+        min-height: 40vh;
+    }
+    
+    .home-banner h1 {
+        font-size: 2rem;
+    }
+    
+    .home-banner p.lead {
+        font-size: 1.1rem;
+    }
+}

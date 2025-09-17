@@ -1,0 +1,22 @@
+/* FOOTER */
+footer {
+    background-color: var(--verde-esmeralda);
+    color: white;
+    padding: 2.5rem 0;
+    margin-top: 3rem;
+}
+
+footer h5 {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+footer p, footer a {
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+footer a:hover {
+    color: var(--amarillo-mostaza);
+}

@@ -1,0 +1,136 @@
+/* FILTROS DE CATEGORÍAS */
+.categories-section {
+    background-color: var(--blanco-suave);
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    display: flex; /* Añadido */
+    justify-content: center; /* Añadido: centra horizontalmente */
+   /* overflow-x: auto;  AÑADIR: Permite scroll horizontal no sé que hace esta linea
+    /*white-space: nowrap;  AÑADIR: Evita el salto de línea */
+}
+
+.categories-filter {
+    display: flex; 
+    flex-wrap: wrap; /* AÑADIR: Evita que se envuelvan los elementos */
+    justify-content: center;
+    gap: 10px; /* separacion entre los botones de filtro*/
+    padding-bottom: 10px;
+    width: max-content; /* AÑADIR: Ajusta el ancho al contenido */
+}
+
+
+.btn-category {
+    background-color: white;
+    color: var(--verde-esmeralda);
+    border: 2px solid var(--verde-esmeralda);
+    border-radius: 25px;
+    padding: 8px 20px;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    
+}
+
+.btn-category:last-child {
+    margin-right: 0; /* AÑADIR: Elimina margen del último botón */
+}
+
+.btn-category:hover,
+.btn-category.active {
+    background-color: var(--verde-esmeralda);
+    color: white;
+}
+
+/* TÍTULO DE SECCIÓN */
+.product-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--marron-claro);
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.product-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--verde-esmeralda);
+}
+
+/* TARJETAS DE PRODUCTOS */
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    background-color: white;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(46, 139, 87, 0.15);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: var(--marron-claro);
+    margin-bottom: 0.75rem;
+    font-size: 1.3rem;
+}
+
+.card-text {
+    flex-grow: 1;
+    margin-bottom: 1rem;
+    color: var(--gris-medio);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+}
+
+.price {
+    font-weight: 700;
+    color: var(--verde-esmeralda);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-primary {
+    background-color: var(--verde-esmeralda);
+    border-color: var(--verde-esmeralda);
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #24704a;
+    border-color: #24704a;
+    transform: translateY(-2px);
+}
+
